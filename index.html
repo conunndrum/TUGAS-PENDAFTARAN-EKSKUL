@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Pendaftaran Ekskul</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <section class="form-card">
+      <h1>Form Pendaftaran Ekskul<br>SMK Letris Pamulang</h1>
+
+      <form id="formPendaftaran">
+        <div class="form-group">
+          <label for="nama">Nama Lengkap:</label>
+          <input type="text" id="nama" placeholder="Masukkan nama siswa" required>
+        </div>
+
+        <div class="form-group">
+          <label>Kelas:</label>
+          <div class="radio-group">
+            <label><input type="radio" name="kelas" value="X" required> X</label>
+            <label><input type="radio" name="kelas" value="XI"> XI</label>
+            <label><input type="radio" name="kelas" value="XII"> XII</label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="jurusan">Jurusan:</label>
+          <select id="jurusan" required>
+            <option value="">-- Pilih Jurusan --</option>
+            <option>PPLG</option>
+            <option>DKV</option>
+            <option>TJKT</option>
+            <option>AKL</option>
+            <option>BDP</option>
+            <option>MPLB</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="ekskul">Pilihan Ekskul:</label>
+          <select id="ekskul" required>
+            <option value="">-- Pilih Ekstrakurikuler --</option>
+            <option>Animasi</option>
+            <option>Paskibra</option>
+            <option>Volly</option>
+            <option>Basket</option>
+            <option>Futsal</option>
+            <option>Letsin</option>
+            <option>PMR</option>
+            <option>Dance Modern</option>
+          </select>
+        </div>
+
+        <button type="submit" id="submitButton">Tambah Data</button>
+      </form>
+    </section>
+
+    <section class="table-card">
+      <h2>Data Pendaftaran Siswa</h2>
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>No</th>
+              <th>Nama</th>
+              <th>Kelas</th>
+              <th>Jurusan</th>
+              <th>Ekskul</th>
+              <th>Aksi</th>
+            </tr>
+          </thead>
+          <tbody id="dataList"></tbody>
+        </table>
+      </div>
+      <p id="emptyMessage" class="empty-message">Belum ada data pendaftaran.</p>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,183 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 24px 14px 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #333;
+  background: #fff;
+}
+
+.container {
+  width: min(100%, 1120px);
+  margin: 0 auto;
+}
+
+.form-card {
+  padding: 0 6px;
+}
+
+h1 {
+  margin: 0 0 34px;
+  text-align: center;
+  color: #23418f;
+  font-size: 25px;
+  line-height: 1.28;
+  font-weight: 700;
+}
+
+.form-group {
+  margin-bottom: 18px;
+}
+
+.form-group > label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+input[type="text"],
+select {
+  width: 100%;
+  height: 40px;
+  padding: 0 10px;
+  border: 1px solid #c9c9c9;
+  border-radius: 4px;
+  background: #fff;
+  color: #333;
+  font-size: 14px;
+  outline: none;
+}
+
+input[type="text"]:focus,
+select:focus {
+  border-color: #23418f;
+  box-shadow: 0 0 0 2px rgba(35, 65, 143, 0.08);
+}
+
+.radio-group {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+}
+
+.radio-group label {
+  font-size: 14px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.radio-group input {
+  margin: 0 3px 0 0;
+  vertical-align: middle;
+}
+
+button {
+  border: 0;
+  border-radius: 4px;
+  padding: 11px 20px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+#submitButton {
+  margin-top: 2px;
+  background: #20bf63;
+  color: white;
+}
+
+#submitButton:hover {
+  background: #19aa56;
+}
+
+.table-card {
+  margin-top: 34px;
+  padding: 0 0 10px;
+}
+
+h2 {
+  margin: 0 0 14px;
+  font-size: 18px;
+  color: #333;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 680px;
+  font-size: 14px;
+}
+
+th {
+  padding: 14px 12px;
+  text-align: left;
+  background: #23418f;
+  color: #fff;
+  border: 1px solid #fff;
+  font-weight: 600;
+}
+
+td {
+  padding: 13px 12px;
+  border: 1px solid #d7d7d7;
+  background: #fff;
+}
+
+th:first-child,
+td:first-child {
+  width: 55px;
+  text-align: center;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 6px;
+}
+
+.btn-edit {
+  background: #ff9d00;
+  color: #fff;
+}
+
+.btn-delete {
+  background: #ef4444;
+  color: #fff;
+}
+
+.btn-edit:hover {
+  background: #e68c00;
+}
+
+.btn-delete:hover {
+  background: #dc2626;
+}
+
+.empty-message {
+  display: none;
+  margin: 14px 0;
+  color: #777;
+  font-size: 14px;
+}
+
+@media (max-width: 600px) {
+  body {
+    padding-top: 18px;
+  }
+
+  h1 {
+    font-size: 21px;
+    margin-bottom: 25px;
+  }
+
+  .table-card {
+    margin-top: 28px;
+  }
+}
